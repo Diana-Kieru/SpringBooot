@@ -13,10 +13,19 @@ target/
 .springBeans
 .sts4-cache
 
+.idea/
+out/
+.mvn/
+logs/
+*.iml
+**/secrets.yaml
+
+
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
-*.iml
+
 *.ipr
 
 ### NetBeans ###
@@ -31,3 +40,4 @@ build/
 
 ### VS Code ###
 .vscode/
+.DS_Store
