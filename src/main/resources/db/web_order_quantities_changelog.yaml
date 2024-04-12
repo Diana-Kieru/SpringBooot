@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 6
+      author: Dee
+      changes:
+        - createTable:
+            tableName: web_order_quantities
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: product_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_weborderquantities_product
+                    references: product(id)
+              - column:
+                  name: quantity
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: order_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_weborderquantities_order
+                    references: web_order(id)

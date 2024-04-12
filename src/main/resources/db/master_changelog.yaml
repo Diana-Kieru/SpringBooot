@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - include:
+      file: db/user_changelog.yaml
+  - include:
+      file: db/address_changelog.yaml
+  - include:
+      file: db/inventory_changelog.yaml
+  - include:
+      file: db/product_changelog.yaml
+  - include:
+      file: db/web_order_changelog.yaml
+  - include:
+      file: db/web_order_quantities_changelog.yaml
