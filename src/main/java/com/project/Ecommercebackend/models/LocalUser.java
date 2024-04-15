@@ -40,11 +40,7 @@ public class LocalUser {
   @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE, orphanRemoval = true)
   private List<Address> addresses = new ArrayList<>();
 
-  public String getFullname() {
-    return fullname;
-  }
 
-  private String fullname;
 
   /**
    * Gets the addresses.
