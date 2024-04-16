@@ -1,6 +1,7 @@
 package com.project.Ecommercebackend.api.controller.auth;
 
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,5 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/auth")
 
 public class AutheniticationController {
+
+  @PostMapping("/register")
+  public void registeruser(){
+
+  }
 
 }
