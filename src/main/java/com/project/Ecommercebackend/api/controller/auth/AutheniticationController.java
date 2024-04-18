@@ -12,6 +12,7 @@ public class AutheniticationController {
 
   @PostMapping("/register")
   public void registeruser(){
+System.out.println("Registering user");
 
 
   }
