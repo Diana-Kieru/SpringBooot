@@ -7,4 +7,8 @@ public class RegistrationBody {
   private String firstName;
   private String lastName;
 
+  public String getUsername() {
+    return username;
+  }
+
 }
