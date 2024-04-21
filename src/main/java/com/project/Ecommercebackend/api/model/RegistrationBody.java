@@ -11,4 +11,8 @@ public class RegistrationBody {
     return username;
   }
 
+  public void setUsername(String username) {
+    this.username = username;
+  }
+
 }
