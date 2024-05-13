@@ -36,6 +36,7 @@ public class Address {
   @ManyToOne(optional = false)
   @JoinColumn(name = "user_id", nullable = false)
   private LocalUser user;
+  private static final int MAX_LENGTH = 512;
 
   /**
    * Gets the user.
